@@ -10,7 +10,7 @@ Il présente une plateforme d’accompagnement à l’insertion professionnelle.
 Le site a pour objectif de :
 - Informer les utilisateurs sur les services proposés
 - Présenter un parcours d’accompagnement
-- Permettre la prise de contact
+- Permettre la prise de contact  
 
 -------------------------------------------
 
