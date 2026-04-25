@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ProPath — Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- ═══ NAVBAR ════════════════════════════════════ -->
+<nav id="navbar">
+  <a href="index.html" class="logo">Insertion<span>Pro</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-page="index.html">Accueil</a></li>
+    <li><a href="apropos.html" data-page="apropos.html">À Propos</a></li>
+    <li><a href="services.html" data-page="services.html">Services</a></li>
+    <li><a href="contact.html" data-page="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ═══ CONTENU ═══════════════════════════════════ -->
+<div class="page-wrapper">
+
+  <section>
+    <div class="section-label">Nous contacter</div>
+    <h2 class="section-title">Parlons de votre projet</h2>
+    <p class="section-subtitle">Un conseiller vous répondra dans les 24h pour organiser un premier entretien gratuit et sans engagement.</p>
+
+    <div class="contact-wrap">
+
+      <!-- INFOS -->
+      <div class="contact-side">
+        <div class="contact-photo fade-in"></div>
+        <div class="contact-info fade-in delay-1">
+        <div class="contact-info-item">
+          <div class="contact-ico">📍</div>
+          <div>
+            <h4>Adresse</h4>
+            <p>Medina, Dakar<br>Senegal</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-ico">📞</div>
+          <div>
+            <h4>Téléphone</h4>
+            <p>+221 33 888 88 88<br>Lun–Ven, 9h–18h</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-ico">✉️</div>
+          <div>
+            <h4>Email</h4>
+            <p>contact@insertionpro.sn</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-ico">🕐</div>
+          <div>
+            <h4>Horaires d'ouverture</h4>
+            <p>Lundi – Vendredi : 9h00 – 18h00<br>Samedi : 10h00 – 13h00</p>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- FORMULAIRE -->
+      <div class="contact-form fade-in delay-1">
+        <h3>✉️ Envoyez-nous un message</h3>
+
+        <div id="contact-form-body">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-prenom">Prénom *</label>
+              <input type="text" id="f-prenom" placeholder="Votre prénom" />
+            </div>
+            <div class="form-group">
+              <label for="f-nom">Nom *</label>
+              <input type="text" id="f-nom" placeholder="Votre nom" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-email">Email *</label>
+              <input type="email" id="f-email" placeholder="vous@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="f-tel">Téléphone</label>
+              <input type="tel" id="f-tel" placeholder="+221 33 888 88 88" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="f-objet">Objet de votre demande *</label>
+            <select id="f-objet">
+              <option value="">-- Sélectionnez --</option>
+              <option>Bilan de compétences</option>
+              <option>Orientation professionnelle</option>
+              <option>Coaching CV / Entretien</option>
+              <option>Formation</option>
+              <option>Autre renseignement</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="f-message">Votre message *</label>
+            <textarea id="f-message" placeholder="Décrivez brièvement votre situation et votre besoin…"></textarea>
+          </div>
+
+          <button class="submit-btn" onclick="submitForm()">Envoyer le message →</button>
+        </div>
+
+        <!-- Message de succès (masqué par défaut) -->
+        <div class="form-success" id="form-success">
+          <span>🎉</span>
+          Message envoyé avec succès !<br>
+          <small style="font-family:'DM Sans';font-weight:400;font-size:.9rem;color:var(--mid)">
+            Un conseiller vous contactera sous 24h.
+          </small>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>
+<!-- fin .page-wrapper -->
+
+<!-- ═══ FOOTER ════════════════════════════════════ -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">Insertion<span>Pro</span></a>
+      <p>Votre partenaire de confiance pour une insertion professionnelle réussie et durable.</p>
+    </div>
+    <div class="footer-links">
+      <h5>Navigation</h5>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="apropos.html">À Propos</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="services.html">Bilan de compétences</a></li>
+        <li><a href="services.html">Coaching entretien</a></li>
+        <li><a href="services.html">Formations courtes</a></li>
+        <li><a href="services.html">Mise en relation</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="#">Medina, Dakar</a></li>
+        <li><a href="#">+221 33 888 88 88</a></li>
+        <li><a href="#">contact@insertionpro.sn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 InsertionPro — Tous droits réservés</span>
+    <span>Fait avec cœur pour l'emploi</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
